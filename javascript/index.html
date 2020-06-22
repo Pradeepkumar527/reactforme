@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body id="root">
+	<form name="form1">
+		<!--<input type="text" name="name" id="user">
+		<input type="radio" name="gender" id="user">
+		<input type="radio" name="name" id="user">
+		<input type="button" onclick="countpara()" value="Click ME">
+		<p>gpkgpkgpkgpkgpkgpk</p>
+		<p>pkpkpkpkpkpk</p>-->
+		<input type="button" name="click" onclick="show()" value="Click Me">
+		<div id="generate"></div>
+	</form>
+
+	<script type="text/JavaScript">
+		/*function print(){
+			var name1=document.getElementById("user").value;
+			alert("welcome "+name1);
+		}
+
+		function forname(){
+			var genders=document.getElementByName();
+			alert("total genders:"+genders.length);
+		}
+		function countpara(){
+			var count=document.getElementsByTagName("p");
+			alert("the total paragraphs are :"+count.length);
+		}*/
+		function show(){
+			var data= "Name:<input type='text' name='name'><br>Comment:<textarea rows='8' cols='10'></textarea><br><input type="submit" value="submit">"
+			document.getElementById('generate').innerHTML=data;
+		}
+
+	</script>
+
+</body>
+</html>
